@@ -1,0 +1,1723 @@
+.body{
+    margin: 0px;
+    overflow: overlay;
+}
+/*-СКРОЛ БАР-*/
+::-webkit-scrollbar{
+    width: 10px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+/*-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@#=::::=@@@@@@@@@@@@@*=:..  .:-+%@@@@@@@@@@*+-:.  ..:=*@@@@@@@@@@@@#=:..  .:-+%@@@@@
+@@@@#=.      .@@@@@@@@@@@=             :%@@@@@@:              =@@@@@@@@+             -%@@@
+@@=          .@@@@@@@@@%.     =***=      %@@@@*    .:::        =@@@@@@-     -+*+-      %@@
+@@   :=#.    .@@@@@@@@@:     %@@@@@%     .@@@@%:=#@@@@@@*       @@@@@=     #@@@@@#     .@@
+@@+*@@@@.    .@@@@@@@@@     =@@@@@@@+     #@@@@@@@@@@@@@@.      @@@@%     =@@@@@@@-     #@
+@@@@@@@@.    .@@@@@@@@@     -@@@@@@@#     +@@@@@@@@@@@@@%      -@@@@+     #@@@@@@@*     +@
+@@@@@@@@.    .@@@@@@@@@:     +@@@@@#-     =@@@@@@@@@@@@@.     :@@@@@-     %@@@@@@@#     -@
+@@@@@@@@.    .@@@@@@@@@%.       .         =@@@@@@@@@@@*      -@@@@@@-     %@@@@@@@#     -@
+@@@@@@@@.    .@@@@@@@@@@@+.        .-     *@@@@@@@@@%:     .#@@@@@@@-     %@@@@@@@#     =@
+@@@@@@@@.    .@@@@@@@@@@@@@@%#**#%@@*     %@@@@@@@%=     .+@@@@@@@@@+     #@@@@@@@*     +@
+@@@@@@@@.    .@@@@@@@@@@@@@@@@@@@@@@:    -@@@@@@@=      +@@@@@@@@@@@#     =@@@@@@@-     %@
+@@@@@@@@.    .@@@@@@@@@@@@@@@@@@@@%:    .@@@@@@+      +@@@@@@@@@@@@@@:     #@@@@@*     =@@
+@@=-----      -----%@@@@..-=++++=:     :@@@@@@-      .::::::::::-@@@@%.     :=+=:     -@@@
+@@                 *@@@@             :#@@@@@@@.                  %@@@@@-            .*@@@@
+@@+================@@@@@%+=::...:-=*@@@@@@@@@@#==================@@@@@@@@*=-:...:-+%@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+-*/
+/*-КНОПКА НАВЕРХ-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.btn-up{
+    position: fixed;
+    right: 2.5%;
+    bottom: 0%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-content: center; 
+}
+.btn-up::before{
+    right: 1%;
+    content: "";
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+.btn-up_hide{
+    display: none;
+}
+@media (hover:hover) and (pointer: fine){
+    .btn-up:hover{
+        transition: 0.5s;;
+    }
+}
+    @media all and (max-width: 1920px){
+        .btn-up{
+            width: 60px;
+            height: 60px; 
+        }
+        .btn-up::before{
+            width: 60px;
+            height: 60px;
+        }
+    }
+    @media all and (max-width: 1700px){
+        .btn-up{
+            width: 55px;
+            height: 55px; 
+        }
+        .btn-up::before{
+            width: 55px;
+            height: 55px;
+        }
+    }
+    @media all and (max-width: 960px){
+        .btn-up{
+            width: 50px;
+            height: 50px; 
+        }
+        .btn-up::before{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    @media all and (max-width: 720px){
+        .btn-up{
+            width: 45px;
+            height: 45px; 
+        }
+        .btn-up::before{
+            width: 45px;
+            height: 45px;
+        }
+    }
+    @media all and (max-width: 540px){
+        .btn-up{
+            width: 40px;
+            height: 40px; 
+        }
+        .btn-up::before{
+            width: 40px;
+            height: 40px;
+        }
+    }
+/*-КНОПКА ТЕМНОЙ СВЕТЛОЙ ТЕМЫ-*/
+.theme{
+    position: fixed;
+    cursor: pointer;
+    left:1.5%;
+    bottom: 2.5%;
+    border-radius: 5px;
+    padding: 10px;
+}
+.changeTheme{
+    width: 40px;
+    height: 40px; 
+}
+    @media all and (max-width:1700px){
+        .changeTheme{
+            width: 35px;
+            height: 35px;
+        }
+    }
+    @media all and (max-width:960px){
+        .changeTheme{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    @media all and (max-width:720px){
+        .changeTheme{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    @media all and (max-width:540px){
+        .changeTheme{
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+/*
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@####%@@@@@@@@@####@@@@@@@@%###@@@@@@@@%##@@@@%###%@@@@@@##%@@@@@@@@@@@@@%##@@@@@@@@@@@@
+@@=     *@@@@@@@.    :@@@@@@%    .@@@@@@@:  =@@@.    =@@@@#  =@@@@@@@@@@*-    *@@@@@@@@@@@
+@@=  -   %@@@@@.  -  :@@@@@@: .-  :@@@@@@:  =@@@.  .  =@@@#  =@@@@@@@@@- -+   *@@@@@@@@@@@
+@@=  =*  .@@@@=  ++  :@@@@@=  *@.  +@@@@@:  =@@@.  #.  =@@#  =@@@@@@@@@@@@@   *@@@@@@@@@@@
+@@=  =@=  -@@#  :@+  :@@@@*  :@@#   %@@@@:  =@@@.  %@:  -@#  =@@@@@@@@@@@@@   *@@@@@@@@@@@
+@@=  =@@.  #@.  %@+  :@@@@   #%%%:  :@@@@:  =@@@.  %@@.  -#  =@@@@@@@@@@@@@   *@@@@@@@@@@@
+@@=  =@@*  .:  *@@+  :@@@=           +@@@:  =@@@.  %@@@.  :  =@@@@@@@@@@@@@   *@@@@@@@@@@@
+@@=  =@@@=    =@@@+  :@@*  .%%%%%%*   #@@:  =@@@.  %@@@@:    =@@@@@@@@@%***   -**%@@@@@@@@
+@@=  =@@@@:  :@@@@*  -@@   #@@@@@@@-  .@@:  +@@@.  %@@@@@-   +@@@@@@@@@=         =@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+.MAIN1{
+    width: 100%; 
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}   
+    .MENU {
+        grid-area: 1 / 1 / 2 / 6;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 25px 1fr 1fr;
+        grid-template-rows: repeat(3, 50px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+        .HEADER {
+            grid-area:  2 / 1 / 3 / 9;
+            display: grid;
+            grid-template-columns: 
+            1fr 1fr 1fr 1fr 1fr 1fr 
+            1fr 1fr 1fr 1fr 1fr 1fr 
+            1fr 1fr 1fr 1fr 1fr 1fr 
+            1fr 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            line-height: 50px;
+        }
+            .HEADER-item1{
+                cursor: default;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 22px; 
+                font-family: Inika; 
+                font-weight: 100;  
+                grid-area: 1 / 15 / 2 / 19; 
+            }
+            .HEADER-item21{
+                cursor: default;
+                font-size: 32px; 
+                font-family: Inika; 
+                font-weight: 400; 
+                grid-area: 1 / 2 / 3 / 12;
+            }
+            .HEADER-item22{
+                display: none;
+                font-size: 40px; 
+                font-family: Inika; 
+                font-weight: 400;
+            }
+            .HEADER-item3{
+                cursor: default;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 48px; 
+                font-family: Inika; 
+                font-weight: 400;
+                grid-area: 2 / 16 / 3 / 18;
+            }
+            .HEADER-item4{
+                cursor: pointer;
+                grid-area: 1 / 13 / 3 / 15;
+            }
+        .HEADER-button1 { 
+            grid-area: 2 / 9 / 3 / 10;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            cursor: pointer;
+        }
+            .HEADER-button1-item1{
+                border-radius: 5px;
+                grid-area: 1 / 1 / 4 / 4; 
+            }
+            .HEADER-button1-text{
+                grid-area: 2 / 2 / 3 / 3;
+                font-size: 23px; 
+                font-family: Inika; 
+                font-weight: 400;
+            }
+            .HEADER-button1-img{
+                display: none;
+            }
+        .HEADER-button2 { 
+            grid-area: 2 / 11 / 3 / 12;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            cursor: pointer;
+        }
+            .HEADER-button2-item1{
+                border-radius: 5px;
+                grid-area: 1 / 1 / 4 / 4; 
+            }
+            .HEADER-button2-text{
+                grid-area: 2 / 2 / 3 / 3;
+                font-size: 23px; 
+                font-family: Inika; 
+                font-weight: 400;
+            }
+            .HEADER-button2-img{
+                display: none;
+            }
+    .IMAGES { 
+        grid-area: 2 / 1 / 6 / 6;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+        .IMAGE1{
+            clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+            grid-area: 1 / 1 / 5 / 1;
+            cursor: pointer;
+            background-repeat: no-repeat
+        }
+        .IMAGE2{
+            clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+            grid-area: 1 / 2 / 5 / 2;
+            cursor: pointer;
+            background-repeat: no-repeat
+        }
+        .IMAGE3{
+            clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+            grid-area: 1 / 3 / 5 / 3;
+            cursor: pointer;
+            background-repeat: no-repeat
+        }
+        .IMAGE4{
+            clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+            grid-area: 1 / 4 / 5 / 4;
+            cursor: pointer;
+            background-repeat: no-repeat
+        }
+
+/*
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@%++++#@@@@@@@@%*+++%@@@@@@@#+++%@@@@@@@#++%@@@#+++#@@@@@@++#@@@@@@@@@@%*+==+*@@@@@@@@@@@
+@@=     +@@@@@@%     :@@@@@@#     @@@@@@@:  =@@@.    =@@@@#  =@@@@@@@@@.        *@@@@@@@@@
+@@=  -   %@@@@@.  =  :@@@@@@. .=  :@@@@@@:  =@@@.  :  =@@@#  =@@@@@@@@@=*@@@*    @@@@@@@@@
+@@=  =#   @@@@-  *+  :@@@@@-  #@:  =@@@@@:  =@@@.  %:  -@@#  =@@@@@@@@@@@@@@#   .@@@@@@@@@
+@@=  =@=  -@@*  :@+  :@@@@*  -@@#   %@@@@:  =@@@.  %@:  :@#  =@@@@@@@@@@@@@%.  :%@@@@@@@@@
+@@=  =@@.  *%   %@+  :@@@%   *###:  :@@@@:  =@@@.  %@@:  -#  =@@@@@@@@@@@%=   =@@@@@@@@@@@
+@@=  =@@#   .  #@@+  :@@@-           =@@@:  =@@@.  %@@@:  .  =@@@@@@@@@@+   =@@@@@@@@@@@@@
+@@=  =@@@=    +@@@+  :@@*  .@@@@@@#   *@@:  =@@@.  %@@@@-    =@@@@@@@@%.   =+++++#@@@@@@@@
+@@+..+@@@@-..-@@@@*..=@@...%@@@@@@@=..:@@-..+@@@:..%@@@@@=...+@@@@@@@@*..........=@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+.MAIN2{
+    width: 100%; 
+    height: 100vh; 
+    display: grid;
+    grid-template-columns: 7.5% 1fr 1fr 1fr 7.5%;
+    grid-template-rows: 10% 35% 35%;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+    .MAIN2-ITEM4{
+        grid-area: 1 / 2 / 2 / 5; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;  
+    }
+        .MAIN2-ITEM4-item2{
+            font-size: 48px; 
+            font-family: Inter;
+            font-weight: 700; 
+        }
+    .MAIN2-ITEM3{ 
+        grid-area: 2 / 2 / 3 / 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr
+    }
+        .MAIN2-ITEM3-item1{
+            font-size: 20px;
+            font-family: Inika;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            text-align: center;
+            grid-area: 1/1/1/1;
+        }
+        .MAIN2-ITEM3-item3{
+            font-size: 26px;
+            font-family: Inika;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            text-align: center;
+            grid-area: 1/1/1/1;
+        }
+    .MAIN2-ITEM2{ 
+        grid-area: 2 / 3 / 3 / 4;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 
+    }
+        .MAIN2-ITEM2-item1{
+            font-size: 20px;
+            font-family: Inika;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center; 
+            grid-area: 1/1/1/1;
+        }
+        .MAIN2-ITEM2-item3{
+            font-size: 26px;
+            font-family: Inika;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center; 
+            grid-area: 1/1/1/1;
+        }
+    .MAIN2-ITEM1{
+        grid-area: 2 / 4 / 3 / 5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 
+    }
+        .MAIN2-ITEM1-item1{
+            font-size: 20px;
+            font-family: Inika;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center; 
+            grid-area: 1/1/1/1;
+        }
+        .MAIN2-ITEM1-item3{
+            font-size: 26px;
+            font-family: Inika;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center; 
+            grid-area: 1/1/1/1;
+        }
+    .MAIN2-ITEM5{
+        grid-area: 3 / 2 / 4 / 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 
+    }
+        .MAIN2-ITEM5-item1{
+            font-size: 20px;
+            font-family: Inika;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            text-align: center;
+            grid-area: 1/1/1/1;
+        }
+        .MAIN2-ITEM5-item3{
+            font-size: 26px;
+            font-family: Inika;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center; 
+            grid-area: 1/1/1/1;
+        }
+    .MAIN2-ITEM6{
+        grid-area: 3 / 3 / 4 / 4;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 
+    }
+        .MAIN2-ITEM6-item1{
+            font-size: 20px;
+            font-family: Inika;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center; 
+            grid-area: 1/1/1/1;
+        }
+        .MAIN2-ITEM6-item3{
+            font-size: 26px;
+            font-family: Inika;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center; 
+            grid-area: 1/1/1/1;
+        }
+    .MAIN2-ITEM7{
+        grid-area: 3 / 4 / 4 / 5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 
+    }
+        .MAIN2-ITEM7-item1{
+            font-size: 20px;
+            font-family: Inika;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            text-align: center;
+            grid-area: 1/1/1/1;
+        }
+        .MAIN2-ITEM7-item3{
+            font-size: 26px;
+            font-family: Inika;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center; 
+            grid-area: 1/1/1/1;
+        }
+/*
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@%+==+*@@@@@@@@%+==+#@@@@@@@*==+#@@@@@@@*++#@@@*==+*@@@@@@++#@@@@@@@@@@#+=--=+%@@@@@@@@@@
+@@=     =@@@@@@%     :@@@@@@#     %@@@@@@:  =@@@.    :@@@@#  =@@@@@@@@%  .::    +@@@@@@@@@
+@@=  -   #@@@@@.  =  :@@@@@@. :=  .@@@@@@:  =@@@.  :  -@@@#  =@@@@@@@@@*%@@@@.   @@@@@@@@@
+@@=  =#   %@@@-  #+  :@@@@@:  #@:  =@@@@@:  =@@@.  %-  :@@#  =@@@@@@@@@@@%%#+   *@@@@@@@@@
+@@=  =@+  :@@+  -@+  :@@@@+  =@@%   #@@@@:  =@@@.  %@-  .@#  =@@@@@@@@@@.     .*@@@@@@@@@@
+@@=  =@@.  *%  .@@+  :@@@%   *###:  .@@@@:  =@@@.  %@@:  :#  =@@@@@@@@@@@%%#+.   #@@@@@@@@
+@@=  =@@#   .  %@@+  :@@@:  ......   -@@@:  =@@@.  %@@@-  .  =@@@@@@@@@@@@@@@#   -@@@@@@@@
+@@=  =@@@*    +@@@+  :@@=  .@@@@@@#   +@@:  =@@@.  %@@@@=    =@@@@@@@@+.-+++-    #@@@@@@@@
+@@+..+@@@@=..-@@@@*..=@@..:%@@@@@@@+..:@@-..*@@@-..@@@@@@=...*@@@@@@@@%=:    .-*@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+.MAIN3{
+    width: 100%; 
+    height: 100vh; 
+    display: grid;
+    grid-template-columns: 7.5% 1fr 1fr 1fr 1fr 7.5%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+/*-ITEM4-*/
+.MAIN3-ITEM4{
+    grid-area: 2 / 2 / 3 / 6; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch; 
+}
+    .MAIN3-ITEM4-item1{
+        font-size: 40px; 
+        font-family: Inika; 
+        font-weight: 700; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+        grid-area: 1 / 3 / 2 / 5; 
+    }
+    .MAIN3-ITEM4-item2{
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: 1 / 1 / 2 / 3;
+        background-repeat: no-repeat;
+        
+    }
+/*-ITEM3-*/
+.MAIN3-ITEM3{
+    grid-area: 3 / 2 / 4 / 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch; 
+}
+    .MAIN3-ITEM3-item1{
+        font-size: 40px; 
+        font-family: Inika; 
+        font-weight: 700; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-area: 1 / 1 / 2 / 3; 
+    }
+    .MAIN3-ITEM3-item2{
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        grid-area: 1 / 3 / 2 / 5;
+        background-repeat: no-repeat
+    }
+/*-ITEM2-*/
+.MAIN3-ITEM2{
+    grid-area: 4 / 2 / 5 / 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch; 
+}
+    .MAIN3-ITEM2-item1{
+        font-size: 40px; 
+        font-family: Inika; 
+        font-weight: 700; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+        grid-area: 1 / 3 / 2 / 5; 
+    }
+    .MAIN3-ITEM2-item2{
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        grid-area: 1 / 1 / 2 / 3;
+        background-repeat: no-repeat
+    }
+/*-ITEM1-*/
+.MAIN3-ITEM1{
+    grid-area: 5 / 2 / 6 / 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch; 
+}
+    .MAIN3-ITEM1-item1{
+        font-size: 40px; 
+        font-family: Inika; 
+        font-weight: 700; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+        grid-area: 1 / 1 / 2 / 3; 
+    }
+    .MAIN3-ITEM1-item2{
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        grid-area: 1 / 3 / 2 / 5;
+        background-repeat: no-repeat;
+        
+    }
+/*-ITEM5-*/
+.MAIN3-ITEM5{
+    grid-area: 1 / 2 / 2 / 6;
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 1fr 1fr 150px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+    .MAIN3-ITEM5-item1{
+        font-size: 50px; 
+        font-family: Inter; 
+        font-weight: 700; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+        grid-area: 1 / 2 / 2 / 6;
+    }
+/*
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@#====*@@@@@@@@#====#@@@@@@@+===#@@@@@@@*==#@@@*===*@@@@@@==#@@@@@@@@@@@@@#====@@@@@@@@@@
+@@=     =@@@@@@#     :@@@@@@*     %@@@@@@:  =@@@.    :@@@@#  =@@@@@@@@@@@@=     %@@@@@@@@@
+@@=  =.  *@@@@%  .+  :@@@@@%  :*  .@@@@@@:  =@@@.  -  :@@@#  =@@@@@@@@@@@-  *   %@@@@@@@@@
+@@=  =%   %@@@:  #+  :@@@@@:  %@:  -@@@@@:  =@@@.  %-  .@@#  =@@@@@@@@@@-  #@   %@@@@@@@@@
+@@=  =@+  :@@+  =@+  :@@@@=  =@@%   #@@@@:  =@@@.  %@=  .%#  =@@@@@@@@%. :@@@   %@@@@@@@@@
+@@=  =@@:  +#  .@@+  :@@@%   ++++:  .@@@@:  =@@@.  %@@-  .#  =@@@@@@@@   ++++   =+@@@@@@@@
+@@=  =@@%      %@@+  :@@@:  ......   :@@@:  =@@@.  %@@@=  .  =@@@@@@@@            %@@@@@@@
+@@=  =@@@*    *@@@+  :@@=  :@@@@@@%   +@@:  =@@@.  %@@@@=    =@@@@@@@@@@@@@@@   %@@@@@@@@@
+@@*::*@@@@+::=@@@@#-:+@@-:-@@@@@@@@*::-@@=::*@@@=:-@@@@@@*-::#@@@@@@@@@@@@@@@-:-@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+.MAIN4{
+    width: 100%; 
+    height: 100vh; 
+    display: grid;
+    grid-template-columns: 7.5% 1fr 1fr 1fr 7.5%;
+    grid-template-rows: 10% 80%;
+    grid-column-gap: 7.5%;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.MAIN4-ITEM1{
+    grid-area: 1 / 2 / 2 / 5;
+    font-size: 50px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.MAIN4-ITEM2{
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 7.5% 1fr 7.5%;
+    grid-template-rows: 10% 30% 40%;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    justify-items: stretch;
+    align-items: stretch;
+}
+    .MAIN4-ITEM2-item1{
+        grid-area: 3 / 2 / 4 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px; 
+        font-family: Inter; 
+        font-weight: 400; 
+    }
+    .MAIN4-ITEM2-item2{
+        grid-area: 2 / 2 / 3 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        filter: blur(10px);
+    }
+        @media all and (max-width : 1920px){
+            .MAIN4-ITEM2-item2{
+                background-image: url(../assets/1920/BASE/TestingAndDocuments.png);
+            }
+        }
+        @media all and (max-width : 1700px){
+            .MAIN4-ITEM2-item2{
+                background-image: url(../assets/1700/BASE/TestingAndDocuments.png);
+            }
+        }
+        @media all and (max-width : 960px){
+            .MAIN4-ITEM2-item2{
+                background-image: url(../assets/960/BASE/TestingAndDocuments.png);
+            }
+        }
+        @media all and (max-width : 720px){
+            .MAIN4-ITEM2-item2{
+                background-image: url(../assets/720/BASE/TestingAndDocuments.png);
+            }
+        }
+        @media all and (max-width : 540px){
+            .MAIN4-ITEM2-item2{
+                background-image: url(../assets/540/BASE/TestingAndDocuments.png);
+            }
+        }
+    .MAIN4-ITEM2-item3{
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 27px; 
+        font-family: Inter; 
+        font-weight: 400; 
+    }
+.MAIN4-ITEM3{
+    grid-area: 2 / 3 / 3 / 4;
+    display: grid;
+    grid-template-columns: 7.5% 1fr 7.5%;
+    grid-template-rows: 10% 30% 40%;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    justify-items: stretch;
+    align-items: stretch;
+}
+    .MAIN4-ITEM3-item1{
+        grid-area: 3 / 2 / 4 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px; 
+        font-family: Inter; 
+        font-weight: 400; 
+    }
+    .MAIN4-ITEM3-item2{
+        grid-area: 2 / 2 / 3 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        filter: blur(10px);
+    }
+        @media all and (max-width : 1920px){
+            .MAIN4-ITEM3-item2{
+                background-image: url(../assets/1920/BASE/DevelomentPO.png);
+            }
+        }
+        @media all and (max-width : 1700px){
+            .MAIN4-ITEM3-item2{
+                background-image: url(../assets/1700/BASE/DevelomentPO.png);
+            }
+        }
+        @media all and (max-width : 960px){
+            .MAIN4-ITEM3-item2{
+                background-image: url(../assets/960/BASE/DevelomentPO.png);
+            }
+        }
+        @media all and (max-width : 720px){
+            .MAIN4-ITEM3-item2{
+                background-image: url(../assets/720/BASE/DevelomentPO.png);
+            }
+        }
+        @media all and (max-width : 540px){
+            .MAIN4-ITEM3-item2{
+                background-image: url(../assets/540/BASE/DevelomentPO.png);
+            }
+        }
+    .MAIN4-ITEM3-item3{
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 27px; 
+        font-family: Inter; 
+        font-weight: 400; 
+    }
+.MAIN4-ITEM4{
+    grid-area: 2 / 4 / 3 / 5;
+    display: grid;
+    grid-template-columns: 7.5% 1fr 7.5%;
+    grid-template-rows: 10% 30% 40%;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    justify-items: stretch;
+    align-items: stretch;
+}
+    .MAIN4-ITEM4-item1{
+        grid-area: 3 / 2 / 4 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px; 
+        font-family: Inter; 
+        font-weight: 400; 
+    }
+    .MAIN4-ITEM4-item2{
+        grid-area: 2 / 2 / 3 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../assets/TEAM/Injection250x250.png);
+        background-repeat: no-repeat;
+        filter: blur(10px);
+    }
+        @media all and (max-width : 1920px){
+            .MAIN4-ITEM4-item2{
+                background-image: url(../assets/1920/BASE/Injection.png);
+            }
+        }
+        @media all and (max-width : 1700px){
+            .MAIN4-ITEM4-item2{
+                background-image: url(../assets/1700/BASE/Injection.png);
+            }
+        }
+        @media all and (max-width : 960px){
+            .MAIN4-ITEM4-item2{
+                background-image: url(../assets/960/BASE/Injection.png);
+            }
+        }
+        @media all and (max-width : 720px){
+            .MAIN4-ITEM4-item2{
+                background-image: url(../assets/720/BASE/Injection.png);
+            }
+        }
+        @media all and (max-width : 540px){
+            .MAIN4-ITEM4-item2{
+                background-image: url(../assets/540/BASE/Injection.png);
+            }
+        }
+    .MAIN4-ITEM4-item3{
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 27px; 
+        font-family: Inter; 
+        font-weight: 400; 
+    }
+/*
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@#::::=@@@@@@@@*-:::*@@@@@@@=:::*@@@@@@@=::*@@@+:::=@@@@@%-:*@@@@@@@@@+::::::::*@@@@@@@@@
+@@=     =@@@@@@#     :@@@@@@*     #@@@@@@:  =@@@.    .@@@@#  =@@@@@@@@@:  ......+@@@@@@@@@
+@@=  =:  *@@@@%  .+  :@@@@@%  -*   %@@@@@:  =@@@.  =  :@@@#  =@@@@@@@@@:  @@@@@@@@@@@@@@@@
+@@=  =@   #@@@.  %+  :@@@@@.  %@-  -@@@@@:  =@@@.  %=  .%@#  =@@@@@@@@@:  +++*#@@@@@@@@@@@
+@@=  =@*  .@@+  =@+  :@@@@=  =@@@   *@@@@:  =@@@.  %@=  .%#  =@@@@@@@@@- ...    =@@@@@@@@@
+@@=  =@@:  =#  :@@+  :@@@#   ====:  .@@@@:  =@@@.  %@@=  .*  =@@@@@@@@@@@@@@@*   =@@@@@@@@
+@@=  =@@%     .@@@+  :@@@.  ::::::.  :@@@:  =@@@.  %@@@+     =@@@@@@@@@@@@@@@%   =@@@@@@@@
+@@=  =@@@#    *@@@+  :@@-  :@@@@@@%   +@@:  =@@@.  %@@@@+    =@@@@@@@@* :-==:   -@@@@@@@@@
+@@*--*@@@@*--+@@@@#--+@@--=@@@@@@@@*--=@@+--#@@@+-=@@@@@@*---#@@@@@@@@@+=-::--+%@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+.MAIN5{
+    width: 100%; 
+    height: 75%; 
+    display: grid;
+    grid-template-columns: 7.5% 1fr 1fr 7.5%;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 10%;
+    justify-items: stretch;
+    align-items: stretch;
+}
+    .MAIN5-ITEM1{
+        grid-area: 2 / 2 / 3 / 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 25%;
+        grid-column-gap: 0px;
+        grid-row-gap: 20%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+        .MAIN5-ITEM1-item1{
+            font-size: 32px; 
+            font-family: Inter; 
+            font-weight: 400; 
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        .MAIN5-ITEM1-item2{
+            font-size: 32px; 
+            font-family: Inter; 
+            font-weight: 400; 
+            grid-area: 1 / 1 / 2 / 2;
+        }
+    .MAIN5-ITEM2{
+        grid-area: 2 / 3 / 3 / 4; 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 25%;
+        grid-column-gap: 0px;
+        grid-row-gap: 20%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+        .MAIN5-ITEM2-item1{
+            font-size: 32px; 
+            font-family: Inter; 
+            font-weight: 400; 
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        .MAIN5-ITEM2-item2{
+            font-size: 32px; 
+            font-family: Inter; 
+            font-weight: 400; 
+            grid-area: 1 / 1 / 2 / 2;
+        }
+    .MAIN5-ITEM3{
+        font-size: 50px; 
+        font-family: Inter; 
+        font-weight: 700; 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-area: 1 / 2 / 2 / 4;
+    }
+
+/*
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@*::::::::+@@@@%+-:...::=#@@@@@@@#=:....:-+%@@@=:::::::::::=@@:::::::::*@@%:::::::-+%@@@@
+@@=  .=====*@@@-   -+++-   .%@@@%.  .=++=:   =@@+===-   -===*@%   -=====#@@*   +++-   =@@@
+@@=  :@@@@@@@@:  .@@@@@@@:  .@@@   -@@@@@@*   +@@@@@@   #@@@@@%   #@@@@@@@@*   @@@@=   @@@
+@@=  :#####@@%   #@@@@@@@#   #@=   @@@@@@@@:   @@@@@@   #@@@@@%   =****%@@@*   %%%*.  =@@@
+@@=        *@#   %@@@@@@@%   #@:  .@@@@@@@@=   @@@@@@   #@@@@@%   .....=@@@*        -%@@@@
+@@=  :%%%%%@@%   *@@@@@@@*   %@=   @@@@@@@@.  :@@@@@@   #@@@@@%   #@@@@@@@@*   %%+   +@@@@
+@@=  :@@@@@@@@:  .#@@@@@*   =@@%   -@@@@@@-   %@@@@@@   #@@@@@%   #@@@@@@@@*   @@@#   +@@@
+@@=  :@@@@@@@@@=    :::   .*@@@@%:   .::.   :%@@@@@@@   #@@@@@%   ......+@@*   @@@@*   *@@
+@@#++*@@@@@@@@@@@*+=--==*%@@@@@@@@%*==--=+*@@@@@@@@@@+=+%@@@@@@+========#@@%+=+@@@@@*+=*@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+.FOOTER{
+    width: 100%; 
+    display: grid;
+    grid-template-columns: 7.5% 1fr 1fr 1fr 7.5%;
+    grid-template-rows:  1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+    .FOOTER-ITEM2{
+        grid-area: 2 / 2 / 3 / 3;
+        font-size: 16px; 
+        font-family: Inter; 
+        font-weight: 300; 
+    }
+    .FOOTER-ITEM3{
+        grid-area: 2 / 3 / 3 / 4;
+        font-size: 16px; 
+        font-family: Inter; 
+        font-weight: 300; 
+    }
+    .FOOTER-ITEM4{
+        grid-area: 2 / 4 / 3 / 5;
+        font-size: 16px; 
+        font-family: Inter; 
+        font-weight: 300; 
+    }
+@media all and (max-width : 1800px){
+    .HEADER-button1-text{
+        white-space: nowrap;
+    }
+}
+/*-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%@@@@@@@@@@@@@@@@@@@%%%%@@@@@@@@@
+@@@@@%+:    .@@@@@@@@@*                  -@@@@@@@#=.       .-*@@@@@@@@@@#=.       .-*@@@@@
+@@%+:        @@@@@@@@@=                  .@@@@@#.             .#@@@@@@%:             .*@@@
+@.           @@@@@@@@@%=-----------.     =@@@@*     .*%%#+      #@@@@%     .+#%#+      *@@
+%  .=*@.     @@@@@@@@@@@@@@@@@@@@@*     :@@@@%     :@@@@@@%     .@@@@.    .@@@@@@%      @@
+@#@@@@@.     @@@@@@@@@@@@@@@@@@@@#     .@@@@@=     #@@@@@@@-     #@@+     *@@@@@@@=     *@
+@@@@@@@.     @@@@@@@@@@@@@@@@@@@%      %@@@@@.     @@@@@@@@+     +@@-     @@@@@@@@*     =@
+@@@@@@@.     @@@@@@@@@@@@@@@@@@%      #@@@@@@      @@@@@@@@*     =@@.     @@@@@@@@#     -@
+@@@@@@@.     @@@@@@@@@@@@@@@@@%.     *@@@@@@@      @@@@@@@@*     =@@.     @@@@@@@@#     -@
+@@@@@@@.     @@@@@@@@@@@@@@@@@.     +@@@@@@@@      @@@@@@@@*     +@@.     @@@@@@@@#     -@
+@@@@@@@.     @@@@@@@@@@@@@@@@:     -@@@@@@@@@.     %@@@@@@@+     #@@-     %@@@@@@@+     +@
+@@@@@@@.     @@@@@@@@@@@@@@@-     .@@@@@@@@@@=     +@@@@@@@.    .@@@*     +@@@@@@@:     @@
+@@@@@@@.     @@@@@@@@@@@@@@=     .%@@@@@@@@@@%      #@@@@@=     *@@@@.     #@@@@@=     =@@
+@-:::::      :::::#@@@@@@@+      %@@@@@@@@@@@@#      :---      +@@@@@%      :---.     =@@@
+@                 +@@@@@@*      #@@@@@@@@@@@@@@%-            -%@@@@@@@@-            :#@@@@
+@*++++++++++++++++%@@@@@@*+===+#@@@@@@@@@@@@@@@@@@*=-:::--+*@@@@@@@@@@@@@#+--:::-=*@@@@@@@
+
+-*/
+@media all and (max-width : 1700px){
+    .MAIN1{
+        display: grid;
+        grid-template-columns: 0% 1fr 0%;
+        grid-template-rows: 25% 75%;
+        grid-column-gap: 0px;
+        grid-row-gap: 0%;
+    }
+        .MENU{
+            grid-area: 1 / 2 / 2 / 3;
+            display: grid;
+            grid-template-columns: 75% 1fr;
+            grid-template-rows: 35% 35%;
+            grid-column-gap: 1%;
+            grid-row-gap: 10%;
+            justify-content: center;
+            align-items: center;
+        }
+            .HEADER{
+                grid-area: 2 / 1 / 3 / 2; 
+                display: grid;
+                grid-template-columns: 20% 30% 40%;
+                grid-template-rows: 50% 50%;
+                grid-column-gap: 1%;
+                grid-row-gap: 1%;
+                justify-items: stretch;
+                align-items: stretch;
+            }
+                .HEADER-item1{
+                    grid-area: 1 / 3 / 2 / 4; 
+                }
+                .HEADER-item22{
+                    display: contents;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    grid-area: 1 / 1 / 3 / 2;
+                }
+                .HEADER-item3{
+                    grid-area: 2 / 3 / 3 / 4;
+                }
+                .HEADER-item4{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    grid-area: 1 / 2 / 3 / 3;
+                }
+                .HEADER-item21{
+                    display: none;
+                }
+            .HEADER-button1{
+                width: 75%;
+                height: 75%;
+                grid-area: 2 / 2 / 3 / 3;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-column-gap: 0%;
+                grid-row-gap: 0%;
+                justify-items: stretch;
+                align-items: stretch;
+            }
+                .HEADER-button1-item1{
+                    grid-area: 1 / 1 / 4 / 4;
+                }
+                .HEADER-button1-text{
+                    grid-area: 2 / 1 / 3 / 4;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    white-space: nowrap;
+                }
+            .HEADER-button2{
+                width: 75%;
+                height: 75%;
+                grid-area: 1 / 2 / 2 / 3;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-column-gap: 0%;
+                grid-row-gap: 0%;
+                justify-items: stretch;
+                align-items: stretch;
+            }
+                .HEADER-button2-item1{
+                    grid-area: 1 / 1 / 4 / 4;
+                }
+                .HEADER-button2-text{
+                    grid-area: 2 / 1 / 3 / 4;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    word-wrap: normal;
+                }
+        .IAMGES{
+            grid-area: 2 / 2 / 3 / 3;
+        }
+/*-MAIN2*/
+.MAIN2-ITEM1-item1{
+    font-size: 15px;
+}
+.MAIN2-ITEM2-item1{
+    font-size: 15px;
+}
+.MAIN2-ITEM3-item1{
+    font-size: 15px;
+}
+.MAIN2-ITEM5-item1{
+    font-size: 15px;
+}
+.MAIN2-ITEM6-item1{
+    font-size: 15px;
+}
+.MAIN2-ITEM7-item1{
+    font-size: 15px;
+}
+.MAIN2-ITEM1-item3{
+    font-size: 22px;
+}
+.MAIN2-ITEM2-item3{
+    font-size: 22px;
+}
+.MAIN2-ITEM3-item3{
+    font-size: 22px;
+}
+.MAIN2-ITEM5-item3{
+    font-size: 22px;
+}
+.MAIN2-ITEM6-item3{
+    font-size: 22px;
+}
+.MAIN2-ITEM7-item3{
+    font-size: 22px;
+}
+/*-MAIN3 SKIP-*/
+/*-MAIN4-*/
+    .MAIN4-ITEM1{
+        font-size: 37.5px;
+    }
+    .MAIN4-ITEM2-item1{
+        font-size: 15px;
+    }
+    .MAIN4-ITEM2-item3{
+        font-size: 21px;
+    }
+    .MAIN4-ITEM3-item1{
+        font-size: 15px;
+    }
+    .MAIN4-ITEM3-item3{
+        font-size: 21px;
+    }
+    .MAIN4-ITEM4-item1{
+        font-size: 15px;
+    }
+    .MAIN4-ITEM4-item3{
+        font-size: 21px;
+    }
+/*-MAIN5-*/
+    .MAIN5-ITEM3{
+        font-size: 37.5px;
+    }
+}
+/*-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@#=-.       .-+%@@@@@@@@@@@@@@@@@@#=-.       .:-*@@@@@@@@@@@@@*=:.      .:=#@@@@@@@@
+@@@@%=                .*@@@@@@@@@@@@@#-                %@@@@@@@@@#:                =@@@@@@
+@@@+         ..         -@@@@@@@@@@%:          ..      %@@@@@@@@-                   .%@@@@
+@@=       =%@@@@%+       :@@@@@@@@#       :+%@@@@@@@#**@@@@@@@@:       +%@@@%+        %@@@
+@#       *@@@@@@@@*       *@@@@@@#       *@@@@@@@@@@@@@@@@@@@@=      .@@@@@@@@%       :@@@
+@=      .@@@@@@@@@@:      :@@@@@@.      #@@@@@@@@@@@@@@@@@@@@%       *@@@@@@@@@=       %@@
+@-      .@@@@@@@@@@=       @@@@@*      -@@@@@@@@@@@@@@@@@@@@@+       @@@@@@@@@@%       +@@
+@+       %@@@@@@@@@+       @@@@@:      *%*+=::::::-+#@@@@@@@@-      .@@@@@@@@@@@       -@@
+@%       .*@@@@@@%+.       %@@@@                      -%@@@@@.      :@@@@@@@@@@@.      :@@
+@@+          ..            %@@@@                        #@@@@.      :@@@@@@@@@@@.      :@@
+@@@*.                      @@@@@        :+*%%@%#=        @@@@.      :@@@@@@@@@@@.      :@@
+@@@@@#=:.       :-**      .@@@@@       +@@@@@@@@@*       *@@@:      :@@@@@@@@@@@       -@@
+@@@@@@@@@@@@@@@@@@@=      =@@@@@       =@@@@@@@@@@       =@@@-       @@@@@@@@@@@       *@@
+@@@@@@@@@@@@@@@@@@%       %@@@@@:      :@@@@@@@@@@       =@@@*       #@@@@@@@@@*       @@@
+@@@@@@@@@@@@@@@@@%.      +@@@@@@*       %@@@@@@@@#       %@@@@       :@@@@@@@@@.      =@@@
+@@@##@@@@@@@@@@#=       =@@@@@@@@.      .#@@@@@@*       =@@@@@+       :%@@@@@#.      .@@@@
+@@%    .:----:         *@@@@@@@@@%.       .---:        =@@@@@@@=        .:::        :@@@@@
+@@%                 .+@@@@@@@@@@@@@-                 :#@@@@@@@@@#.                .+@@@@@@
+@@@+:.           :=#@@@@@@@@@@@@@@@@%+:          .-+%@@@@@@@@@@@@@#=.          .=#@@@@@@@@
+@@@@@@@%######%@@@@@@@@@@@@@@@@@@@@@@@@@@%#####%@@@@@@@@@@@@@@@@@@@@@@%######%@@@@@@@@@@@@
+-*/
+@media all and (max-width : 960px){
+/*-MAIN2-*/
+.MAIN2-ITEM1-item1{
+    font-size: 14px;
+}
+.MAIN2-ITEM2-item1{
+    font-size: 14px;
+}
+.MAIN2-ITEM3-item1{
+    font-size: 14px;
+}
+.MAIN2-ITEM5-item1{
+    font-size: 14px;
+}
+.MAIN2-ITEM6-item1{
+    font-size: 14px;
+}
+.MAIN2-ITEM7-item1{
+    font-size: 14px;
+}
+.MAIN2-ITEM1-item3{
+    font-size: 20px;
+}
+.MAIN2-ITEM2-item3{
+    font-size: 20px;
+}
+.MAIN2-ITEM3-item3{
+    font-size: 20px;
+}
+.MAIN2-ITEM5-item3{
+    font-size: 20px;
+}
+.MAIN2-ITEM6-item3{
+    font-size: 20px;
+}
+.MAIN2-ITEM7-item3{
+    font-size: 20px;
+}
+/*-MAIN4-*/
+.MAIN4{
+    height: 75vh;
+}
+    .MAIN4-ITEM1{
+        font-size: 25px;
+    }
+    .MAIN4-ITEM2{
+        grid-template-columns: 2.5% 1fr 2.5%;
+        grid-template-rows: 10% 20% 30%;
+    }
+        .MAIN4-ITEM2-item1{
+            font-size: 10px;
+        }
+        .MAIN4-ITEM2-item3{
+            font-size: 10px;
+        }
+    .MAIN4-ITEM3{
+        grid-template-columns: 2.5% 1fr 2.5%;
+        grid-template-rows: 10% 20% 30%;
+    }
+        .MAIN4-ITEM3-item1{
+            font-size: 10px;
+        }
+        .MAIN4-ITEM3-item3{
+            font-size: 12px;
+        }
+    .MAIN4-ITEM4{
+        grid-template-columns: 2.5% 1fr 2.5%;
+        grid-template-rows: 10% 20% 30%;
+    }
+        .MAIN4-ITEM4-item1{
+            font-size: 10px;
+        }
+        .MAIN4-ITEM4-item3{
+            font-size: 12px;
+        }
+/*-MAIN5-*/
+    .MAIN5-ITEM1-item1{
+        font-size: 24px;
+    }
+    .MAIN5-ITEM1-item2{
+        font-size: 24px;
+    }
+    .MAIN5-ITEM2-item1{
+        font-size: 24px;
+    }
+    .MAIN5-ITEM2-item2{
+        font-size: 24px;
+    }
+}
+/*-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@+-----------------------+@@@@@@@@@%*=-:.    ..-=*@@@@@@@@@@@@@@@@@#+-:.    .:-+#@@@@@@@@
+@%                         @@@@@@#-                 -%@@@@@@@@@@@%=                =@@@@@@
+@%                         @@@@@%                     +@@@@@@@@@+                    #@@@@
+@@+---------------:       :@@@@@%     :-=++=:          #@@@@@@@=       -#%@@#+.       #@@@
+@@@@@@@@@@@@@@@@@%        %@@@@@@::+%@@@@@@@@#         =@@@@@@*       #@@@@@@@@.      .@@@
+@@@@@@@@@@@@@@@@@.       #@@@@@@@@@@@@@@@@@@@@+        -@@@@@@.      -@@@@@@@@@*       *@@
+@@@@@@@@@@@@@@@@:       *@@@@@@@@@@@@@@@@@@@@@=        *@@@@@#       #@@@@@@@@@@       -@@
+@@@@@@@@@@@@@@@-       +@@@@@@@@@@@@@@@@@@@@@@        .@@@@@@+       @@@@@@@@@@@:      .@@
+@@@@@@@@@@@@@@-       =@@@@@@@@@@@@@@@@@@@@@%.       .%@@@@@@-       @@@@@@@@@@@-       @@
+@@@@@@@@@@@@@=       -@@@@@@@@@@@@@@@@@@@@@#.       :%@@@@@@@-       @@@@@@@@@@@-       @@
+@@@@@@@@@@@@+       .@@@@@@@@@@@@@@@@@@@@@=        +@@@@@@@@@-       @@@@@@@@@@@-       @@
+@@@@@@@@@@@*       .%@@@@@@@@@@@@@@@@@@@+        -%@@@@@@@@@@-       @@@@@@@@@@@-      .@@
+@@@@@@@@@@#        %@@@@@@@@@@@@@@@@@@+.       :#@@@@@@@@@@@@+       %@@@@@@@@@@.      -@@
+@@@@@@@@@#        #@@@@@@@@@@@@@@@@@*.       :#@@@@@@@@@@@@@@#       +@@@@@@@@@%       *@@
+@@@@@@@@%        +@@@@@@@@@@@@@@@@#:       .#@@@@@@@@@@@@@@@@@.      .@@@@@@@@@-      .@@@
+@@@@@@@@.       =@@@@@@@@@@@@@@@@-       :*@@@@@@@@@@@@@@@@@@@*       :%@@@@@@=       #@@@
+@@@@@@@:       :@@@@@@@@@@@@@@@@:                       :@@@@@@=        :---:        *@@@@
+@@@@@@:       :@@@@@@@@@@@@@@@@@.                        %@@@@@@*.                 -%@@@@@
+@@@@@+       .@@@@@@@@@@@@@@@@@@-                        @@@@@@@@@*-            :+%@@@@@@@
+@@@@@@@%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#*++++*#%@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-*/
+@media all and (max-width : 720px){
+    .MAIN2{
+        display: grid;
+        grid-template-columns: 7.5% 1fr 7.5%;
+        grid-template-rows: 10% 11% 11% 11% 11% 11% 11%;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+        .MAIN2-ITEM4-item2{
+            transition: .5s;
+            font-size: 36px;
+        }
+        .MAIN2-ITEM4{
+            grid-area: 1 / 2 / 2 / 3;
+        }
+        .MAIN2-ITEM1{
+            grid-area: 2 / 2 / 3 / 3;
+        }
+        .MAIN2-ITEM2{
+            grid-area: 3 / 2 / 4 / 3;
+        }
+        .MAIN2-ITEM3{
+            grid-area: 4 / 2 / 5 / 3;
+        }
+        .MAIN2-ITEM5{
+            grid-area: 5 / 2 / 6 / 3;
+        }
+        .MAIN2-ITEM6{
+            grid-area: 6 / 2 / 7 / 3;
+        }
+        .MAIN2-ITEM7{
+            grid-area: 7 / 2 / 8 / 3;
+        }
+        .MAIN2-ITEM1-item1{
+            font-size: 10px;
+        }
+        .MAIN2-ITEM2-item1{
+            font-size: 10px;
+        }
+        .MAIN2-ITEM3-item1{
+            font-size: 10px;
+        }
+        .MAIN2-ITEM5-item1{
+            font-size: 10px;
+        }
+        .MAIN2-ITEM6-item1{
+            font-size: 10px;
+        }
+        .MAIN2-ITEM7-item1{
+            font-size: 10px;
+        }
+        .MAIN2-ITEM1-item3{
+            transition: .5s;
+            font-size: 15px;
+        }
+        .MAIN2-ITEM2-item3{
+            transition: .5s;
+            font-size: 15px;
+        }
+        .MAIN2-ITEM3-item3{
+            transition: .5s;
+            font-size: 15px;
+        }
+        .MAIN2-ITEM5-item3{
+            transition: .5s;
+            font-size: 15px;
+        }
+        .MAIN2-ITEM6-item3{
+            transition: .5s;
+            font-size: 15px;
+        }
+        .MAIN2-ITEM7-item3{
+            transition: .5s;
+            font-size: 15px;
+        }
+        .MAIN2-ITEM1:hover > .MAIN2-ITEM1-item1{
+            transition: .5s;
+            font-size: 12px;
+        }
+        .MAIN2-ITEM2:hover > .MAIN2-ITEM2-item1{
+            transition: .5s;
+            font-size: 12px;
+        }
+        .MAIN2-ITEM3:hover > .MAIN2-ITEM3-item1{
+            transition: .5s;
+            font-size: 12px;
+        }
+        .MAIN2-ITEM5:hover > .MAIN2-ITEM5-item1{
+            transition: .5s;
+            font-size: 12px;
+        }
+        .MAIN2-ITEM6:hover > .MAIN2-ITEM6-item1{
+            transition: .5s;
+            font-size: 12px;
+        }
+        .MAIN2-ITEM7:hover > .MAIN2-ITEM7-item1{
+            transition: .5s;
+            font-size: 12px;
+        }
+    /*-MAIN3-*/
+        .MAIN3-ITEM5-item1{
+            transition: .5s;
+            font-size: 37.5px; 
+        }
+        .MAIN3-ITEM4-item1{
+            transition: .5s;
+            font-size: 30px;
+        }
+        .MAIN3-ITEM3-item1{
+            transition: .5s;
+            font-size: 30px;
+        } 
+        .MAIN3-ITEM2-item1{
+            transition: .5s;
+            font-size: 30px;
+        } 
+        .MAIN3-ITEM1-item1{
+            transition: .5s;
+            font-size: 30px;
+        } 
+    /*-MAIN4-*/
+        .MAIN4-ITEM1{
+            font-size: 25px;
+        } 
+        .MAIN4-ITEM2-item1{
+            font-size: 8px;
+        }
+        .MAIN4-ITEM2-item3{
+            font-size: 8px;
+        }
+        .MAIN4-ITEM3-item1{
+            font-size: 8px;
+        }
+        .MAIN4-ITEM3-item3{
+            font-size: 10px;
+        }
+        .MAIN4-ITEM4-item1{
+            font-size: 8px;
+        }
+        .MAIN4-ITEM4-item3{
+            font-size: 10px;
+        }
+    /*-MAIN5-*/
+    .MAIN5{
+        height: 50%;
+    }
+        .MAIN5-ITEM3{
+            font-size: 25px;
+        }
+        .MAIN5-ITEM1-item1{
+            font-size: 16px;
+        }
+        .MAIN5-ITEM1-item2{
+            font-size: 16px;
+        }
+        .MAIN5-ITEM2-item1{
+            font-size: 16px;
+        }
+        .MAIN5-ITEM2-item2{
+            font-size: 16px;
+        }
+    /*-FOOTER-*/
+        .FOOTER-ITEM2{
+            font-size:12px;
+        }
+        .FOOTER-ITEM3{
+            font-size:12px;
+        }
+        .FOOTER-ITEM4{
+            font-size:12px;
+        }
+}
+/*-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@=-:::::::::::::::::=@@@@@@@@@@@@@@@@@@%=-::::::-=@@@@@@@@@@@@@@#+-:.    ..-+#@@@@@@@@@
+@@@+                    %@@@@@@@@@@@@@@@@#           %@@@@@@@@@@@=               .+@@@@@@@
+@@@+                    %@@@@@@@@@@@@@@@*            %@@@@@@@@@*                   .#@@@@@
+@@@+      =============+@@@@@@@@@@@@@@@=     .       %@@@@@@@@+       =#@@@%+.       %@@@@
+@@@+     :@@@@@@@@@@@@@@@@@@@@@@@@@@@@-     :%       %@@@@@@@#       #@@@@@@@@.      :@@@@
+@@@+     :@@@@@@@@@@@@@@@@@@@@@@@@@@@:     -@@       %@@@@@@@:      -@@@@@@@@@*       #@@@
+@@@+     :@@@@@@@@@@@@@@@@@@@@@@@@@%.     =@@@       %@@@@@@%       #@@@@@@@@@@       =@@@
+@@@+     .+=====++*%@@@@@@@@@@@@@@%.     *@@@@       %@@@@@@*       @@@@@@@@@@@.      -@@@
+@@@+                 :+@@@@@@@@@@#      #@@@@@       %@@@@@@=       @@@@@@@@@@@:      .@@@
+@@@*                    +@@@@@@@*     .%@@@@@@       %@@@@@@=       @@@@@@@@@@@:      .@@@
+@@@@*++**###**+-         =@@@@@+     :@@@@@@@@       %@@@@@@=       @@@@@@@@@@@:      :@@@
+@@@@@@@@@@@@@@@@@=        %@@@+     -@@@@@@@@@       %@@@@@@+       @@@@@@@@@@@:      -@@@
+@@@@@@@@@@@@@@@@@@:       *@@@.                          #@@#       #@@@@@@@@@@       +@@@
+@@@@@@@@@@@@@@@@@@-       *@@@.                          =@@@       =@@@@@@@@@#       %@@@
+@@@@@@@@@@@@@@@@@%        %@@@-                          *@@@-       %@@@@@@@@.      -@@@@
+@@=.=*%@@@@@@@@#=        +@@@@@@@@@@@@@@@@@@@%       %@@@@@@@%       .*@@@@@#.      .@@@@@
+@@.      ....           *@@@@@@@@@@@@@@@@@@@@@       %@@@@@@@@#         ...        :@@@@@@
+@@:                  .+@@@@@@@@@@@@@@@@@@@@@@@       %@@@@@@@@@@-                .*@@@@@@@
+@@@*=:.          .-+%@@@@@@@@@@@@@@@@@@@@@@@@@:.   .:@@@@@@@@@@@@@*-.         :=#@@@@@@@@@
+@@@@@@@@@%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%@@@@@@@@@@@@@@
+-*/
+@media all and (max-width : 540px){
+    /*-MAIN1-*/
+    .MENU{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr 10%;
+        grid-column-gap: 2%;
+        grid-row-gap: 2%;
+        justify-items: center;
+        align-items: center;
+    }
+        .HEADER{
+            grid-area: 2 / 1 / 4 / 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1% 35% 1% 35% 1%;
+            grid-column-gap: 2%;
+            grid-row-gap: 2%;
+            justify-items: stretch;
+            align-items: stretch;
+            text-align: center;
+        }
+            .HEADER-item1{
+                width: 110%;
+                grid-area: 2 / 2 / 3 / 3; 
+                transition: .5s;
+                font-size: 13px; 
+            }
+            .HEADER-item22{
+                display: none;
+            }
+            .HEADER-item3{
+                grid-area: 3 / 2 / 5 / 3;
+                transition: .5s;
+                font-size: 22px;
+            }
+            .HEADER-item4{
+                grid-area: 2 / 1 / 5 / 2;
+                transition: .5s;
+            }
+        .HEADER-button1{
+            height: 50%;
+            width: 50%;
+            grid-area: 2 / 2 / 3 / 3;
+        }
+            .HEADER-button1-text{
+                transition: .5s;
+                font-size: 12px;
+            }
+        .HEADER-button2{
+            height: 50%;
+            width: 50%;
+            grid-area: 3 / 2 / 4 / 3;
+        }
+            .HEADER-button2-text{
+                transition: .5s;
+                font-size: 12px;
+            }
+    /*-MAIN2-*/
+        .MAIN2-ITEM1-item1{
+            font-size: 10px;
+        }
+        .MAIN2-ITEM2-item1{
+            font-size: 10px;
+        }
+        .MAIN2-ITEM3-item1{
+            font-size: 10px;
+        }
+        .MAIN2-ITEM5-item1{
+            font-size: 10px;
+        }
+        .MAIN2-ITEM6-item1{
+            font-size: 10px;
+        }
+        .MAIN2-ITEM7-item1{
+            font-size: 10px;
+        }
+        .MAIN2-ITEM4-item2{
+            transition: .5s;
+            font-size: 24px;
+        }
+        .MAIN2-ITEM1-item3{
+            transition: .5s;
+            font-size: 13px;
+        }
+        .MAIN2-ITEM2-item3{
+            transition: .5s;
+            font-size: 13px;
+        }
+        .MAIN2-ITEM3-item3{
+            transition: .5s;
+            font-size: 13px;
+        }
+        .MAIN2-ITEM5-item3{
+            transition: .5s;
+            font-size: 13px;
+        }
+        .MAIN2-ITEM6-item3{
+            transition: .5s;
+            font-size: 13px;
+        }
+        .MAIN2-ITEM7-item3{
+            transition: .5s;
+            font-size: 13px;
+        }
+        .MAIN2-ITEM1:hover > .MAIN2-ITEM1-item1{
+            transition: .5s;
+            font-size: 10px;
+        }
+        .MAIN2-ITEM2:hover > .MAIN2-ITEM2-item1{
+            transition: .5s;
+            font-size: 10px;
+        }
+        .MAIN2-ITEM3:hover > .MAIN2-ITEM3-item1{
+            transition: .5s;
+            font-size: 10px;
+        }
+        .MAIN2-ITEM5:hover > .MAIN2-ITEM5-item1{
+            transition: .5s;
+            font-size: 10px;
+        }
+        .MAIN2-ITEM6:hover > .MAIN2-ITEM6-item1{
+            transition: .5s;
+            font-size: 10px;
+        }
+        .MAIN2-ITEM7:hover > .MAIN2-ITEM7-item1{
+            transition: .5s;
+            font-size: 10px;
+        }
+    /*-MAIN3-*/
+        .MAIN3-ITEM5-item1{
+            transition: .5s;
+            font-size: 25px; 
+        }
+        .MAIN3-ITEM4-item1{
+            transition: .5s;
+            font-size: 20px;
+        }
+        .MAIN3-ITEM3-item1{
+            transition: .5s;
+            font-size: 20px;
+        } 
+        .MAIN3-ITEM2-item1{
+            transition: .5s;
+            font-size: 20px;
+        } 
+        .MAIN3-ITEM1-item1{
+            transition: .5s;
+            font-size: 20px;
+        }
+    /*-MAIN4-*/ 
+    .MAIN4{
+        height: 50vh;
+    }
+    .MAIN4-ITEM2{
+        grid-template-columns: 1% 1fr 1%;
+        grid-template-rows: 10% 25% 40%;
+    }
+        .MAIN4-ITEM2-item1{
+            font-size: 5px;
+        }
+        .MAIN4-ITEM2-item3{
+            font-size: 6px;
+        }
+    .MAIN4-ITEM3{
+        grid-template-columns: 1% 1fr 1%;
+        grid-template-rows: 10% 25% 40%;
+    }    
+        .MAIN4-ITEM3-item1{
+            font-size: 5px;
+        }
+        .MAIN4-ITEM3-item3{
+            font-size: 6px;
+        }
+    .MAIN4-ITEM4{
+        grid-template-columns: 1% 1fr 1%;
+        grid-template-rows: 10% 25% 40%;
+    }
+        .MAIN4-ITEM4-item1{
+            font-size: 5px;
+        }
+        .MAIN4-ITEM4-item3{
+            font-size: 6px;
+        }
+    /*-MAIN5 SKIP-*/
+    /*-FOOTER-*/
+    .FOOTER{
+        display: grid;
+        grid-template-columns: 7.5% 1fr 7.5%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 0%;
+        grid-row-gap: 5%;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+        .FOOTER-ITEM2{
+            grid-area: 1 / 2 / 2 / 3;
+            font-size:8px;
+        }
+        .FOOTER-ITEM3{
+            grid-area: 2 / 2 / 3 / 3;
+            font-size:8px;
+        }
+        .FOOTER-ITEM4{
+            grid-area: 3 / 2 / 4 / 3;;
+            font-size:8px;
+        }
+}

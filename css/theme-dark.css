@@ -1,0 +1,1187 @@
+.body{
+    background: #151322;
+    transition: .5s;
+}
+/*-КНОПКА НАВЕРХ-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.btn-up{
+    transition: .5s;
+    background-color: #151322;
+    box-shadow: rgb(211, 218, 173) 1px 0 10px; 
+}
+@media (hover:hover) and (pointer: fine){
+    .btn-up:hover{
+        transition: .5s;
+        background-color: #151322;
+        box-shadow: rgb(0, 204, 255) 1px 0 25px; 
+    }
+}
+/*-КНОПКА ТЕМНОЙ СВЕТЛОЙ ТЕМЫ-*/
+.theme{
+    background: none;
+    filter: drop-shadow(0 0 20px rgb(255, 0, 140)); 
+    transition: .5s;
+    fill: rgb(255, 0, 140);
+}
+.theme:hover{
+    background: none; 
+    box-shadow: 0 0 25px rgba(178, 219, 230, 0.5);
+    transition: .5s;
+    fill: rgb(0, 204, 255); 
+}
+.change-theme[data-theme="dark"]{
+    display: block;
+    transition: .5s;
+}
+.change-theme[data-theme="light"]{
+    display: none;
+    transition: .5s;
+}
+/*-----------------------------------------------------------------------------------------F_U_L_L__H_D__V_E_R_S_I_O_N-----------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------M-A-I-N_1-----------------------------------------------------------------------------------------------*/
+.HEADER-item1{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 15px;
+    transition: .5s;
+}
+.HEADER-item21{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 15px;
+    transition: .5s;
+}
+.HEADER-item22{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 15px;
+    transition: .5s;
+}
+.HEADER-item3{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 30px;
+    transition: .5s;
+}
+.HEADER-item31{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 20px; 
+    transition: .5s;
+}
+.HEADER-item1:hover{
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 20px;
+    transition: .5s;
+}
+.HEADER-item21:hover{
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 20px;
+    transition: .5s;
+}
+.HEADER-item22:hover{
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 20px;
+    transition: .5s;
+}
+.HEADER-item3:hover{
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 35px;
+    transition: .5s;
+}
+.HEADER-item31:hover{
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px; 
+    transition: .5s;
+}
+/*-КНОПКИ-*/
+.HEADER-button1:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.HEADER-button2:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.HEADER-button1-item1{ 
+    background: #1dd3e0;
+    transition: .5s; 
+}
+.HEADER-button1-text{
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+.HEADER-button2-item1{
+    background: #1dd3e0;
+    transition: .5s;
+}
+.HEADER-button2-text{
+    color: rgb(0, 0, 0); 
+    transition: .5s;
+}
+.HEADER-button1:hover > .HEADER-button1-item1{
+    transition: .5s;
+    border-radius: 10px;
+}
+.HEADER-button1:hover > .HEADER-button1-item1{
+    transition: .5s;
+    background: none;
+    box-shadow: 0 0 50px rgba(27, 222, 236, 0.5);
+}
+.HEADER-button1:hover > .HEADER-button1-text{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 20px; 
+    transition: .5s;
+}
+.HEADER-button2:hover > .HEADER-button2-item1{
+    transition: .5s;
+    border-radius: 10px;
+}
+.HEADER-button2:hover > .HEADER-button2-item1{
+    transition: .5s;
+    background: none;
+    box-shadow: 0 0 50px rgba(27, 222, 236, 0.5);
+}
+.HEADER-button2:hover > .HEADER-button2-text{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 20px; 
+    transition: .5s;
+}
+/*-ЛОГО-*/
+.HEADER-item4{
+    filter: drop-shadow(1px 0 20px rgb(255, 0, 140));  
+    transition: .5s;
+    background-image: url(../assets/LOGO/Raton-Logo100x100Dark.png);
+    background-repeat: no-repeat;
+}
+.HEADER-item4:hover{
+    filter: drop-shadow(1px 0 25px rgb(0, 204, 255));  
+    transition: .5s;
+    background-image: url(../assets/LOGO/Raton-Logo100x100.png);
+    background-repeat: no-repeat;
+}
+@media all and (max-width : 540px){
+    .HEADER-item4{
+        background-image: url(../assets/LOGO/Raton-Logo75x75Dark.png);
+        background-repeat: no-repeat;
+    }
+    .HEADER-item4:hover{
+        background-image: url(../assets/LOGO/Raton-Logo75x75.png);
+        background-repeat: no-repeat;
+    }
+}
+@media all and (max-width : 350px){
+    .HEADER-item4{
+        background-image: url(../assets/LOGO/Raton-Logo50x50Dark.png);
+        background-repeat: no-repeat;
+    }
+    .HEADER-item4:hover{
+        background-image: url(../assets/LOGO/Raton-Logo50x50.png);
+        background-repeat: no-repeat;
+    }
+}
+/*-КАРТИНКИ-*/
+.IMAGE1{
+    transition: .5s;
+    opacity: .5;
+    background-image: url(../assets/1920/LIGHT/R1V_1920.jpg);
+    background-repeat: no-repeat;
+}
+.IMAGE2{
+    transition: .5s;
+    opacity: .5;
+    background-image: url(../assets/1920/LIGHT/R2V_1920.jpg);
+    background-repeat: no-repeat;
+}
+.IMAGE3{
+    transition: .5s;
+    opacity: .5;
+    background-image: url(../assets/1920/LIGHT/R3V_1920.jpg);
+    background-repeat: no-repeat;
+}
+.IMAGE4{
+    transition: .5s;
+    opacity: .5;
+    background-image: url(../assets/1920/LIGHT/R4V_1920.jpg);
+    background-repeat: no-repeat;
+}
+@media all and (max-width : 1700px){
+    .IMAGE1{background-image: url(../assets/1700/LIGHT/R1V_1700.jpg);}
+    .IMAGE2{background-image: url(../assets/1700/LIGHT/R2V_1700.jpg);}
+    .IMAGE3{background-image: url(../assets/1700/LIGHT/R3V_1700.jpg);}
+    .IMAGE4{background-image: url(../assets/1700/LIGHT/R4V_1700.jpg);}
+}
+@media all and (max-width : 960px){
+    .IMAGE1{background-image: url(../assets/960/LIGHT/R1V_960.jpg);}
+    .IMAGE2{background-image: url(../assets/960/LIGHT/R2V_960.jpg);}
+    .IMAGE3{background-image: url(../assets/960/LIGHT/R3V_960.jpg);}
+    .IMAGE4{background-image: url(../assets/960/LIGHT/R4V_960.jpg);}
+}
+@media all and (max-width : 720px){
+    .IMAGE1{background-image: url(../assets/720/LIGHT/R1V_720.jpg);}
+    .IMAGE2{background-image: url(../assets/720/LIGHT/R2V_720.jpg);}
+    .IMAGE3{background-image: url(../assets/720/LIGHT/R3V_720.jpg);}
+    .IMAGE4{background-image: url(../assets/720/LIGHT/R4V_720.jpg);}
+}
+@media all and (max-width : 540px){
+    .IMAGE1{background-image: url(../assets/540/LIGHT/R1V_540.jpg);}
+    .IMAGE2{background-image: url(../assets/540/LIGHT/R2V_540.jpg);}
+    .IMAGE3{background-image: url(../assets/540/LIGHT/R3V_540.jpg);}
+    .IMAGE4{background-image: url(../assets/540/LIGHT/R4V_540.jpg);}
+}
+.IMAGE1:hover{
+    transition: .5s;
+    opacity: 1;
+    background-image: url(../assets/1920/DARK/R1DV_1920.jpg);
+    background-repeat: no-repeat;
+}
+.IMAGE2:hover{
+    transition: .5s;
+    opacity: 1;
+    background-image: url(../assets/1920/DARK/R2DV_1920.jpg);
+    background-repeat: no-repeat;
+}
+.IMAGE3:hover{
+    transition: .5s;
+    opacity: 1;
+    background-image: url(../assets/1920/DARK/R3DV_1920.jpg);
+    background-repeat: no-repeat;
+}
+.IMAGE4:hover{
+    transition: .5s;
+    opacity: 1;
+    background-image: url(../assets/1920/DARK/R4DV_1920.png);
+    background-repeat: no-repeat;
+}
+@media all and (max-width : 1700px){
+    .IMAGE1:hover{background-image: url(../assets/1700/DARK/R1DV_1700.jpeg)}
+    .IMAGE2:hover{background-image: url(../assets/1700/DARK/R2DV_1700.jpeg)}
+    .IMAGE3:hover{background-image: url(../assets/1700/DARK/R3DV_1700.jpeg)}
+    .IMAGE4:hover{background-image: url(../assets/1700/DARK/R4DV_1700.png)}
+}
+@media all and (max-width : 960px){
+    .IMAGE1:hover{background-image: url(../assets/960/DARK/R1DV_960.jpeg)}
+    .IMAGE2:hover{background-image: url(../assets/960/DARK/R2DV_960.jpeg)}
+    .IMAGE3:hover{background-image: url(../assets/960/DARK/R3DV_960.jpeg)}
+    .IMAGE4:hover{background-image: url(../assets/960/DARK/R4DV_960.png)}
+}
+@media all and (max-width : 720px){
+    .IMAGE1:hover{background-image: url(../assets/720/DARK/R1DV_720.jpeg)}
+    .IMAGE2:hover{background-image: url(../assets/720/DARK/R2DV_720.jpeg)}
+    .IMAGE3:hover{background-image: url(../assets/720/DARK/R3DV_720.jpeg)}
+    .IMAGE4:hover{background-image: url(../assets/720/DARK/R4DV_720.png)}
+}
+@media all and (max-width : 540px){
+    .IMAGE1:hover{background-image: url(../assets/540/DARK/R1DV_540.jpg)}
+    .IMAGE2:hover{background-image: url(../assets/540/DARK/R2DV_540.jpg)}
+    .IMAGE3:hover{background-image: url(../assets/540/DARK/R3DV_540.jpg)}
+    .IMAGE4:hover{background-image: url(../assets/540/DARK/R4DV_540.png)}
+}
+/*--------------------------------------------------------------------------------------M-A-I-N_2-----------------------------------------------------------------------------------------------*/
+/*-УСЛУГИ1-*/
+.MAIN2-ITEM1{
+    transition: 0.5s;
+    box-shadow: rgb(0, 204, 255) 1px 0 10px; 
+    border-radius: 5px;
+}
+.MAIN2-ITEM1:hover{
+    transition: 0.5s;
+    box-shadow: rgb(211, 218, 173) 1px 0 25px; 
+    border-radius: 5px;
+}
+.MAIN2-ITEM1:hover > .MAIN2-ITEM1-item1{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+.MAIN2-ITEM1:hover > .MAIN2-ITEM1-item3{
+    transition: .5s;
+    opacity: 0;
+}
+.MAIN2-ITEM1-item1{
+    background: none; 
+}
+.MAIN2-ITEM1-item2{
+    background: none; 
+}
+.MAIN2-ITEM1-item3{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN2-ITEM1-item3:hover{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+.MAIN2-ITEM1-item1{
+    text-align: center;
+    transition: 0.5s;
+    color: transparent;
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+/*-УСЛУГИ2-*/
+.MAIN2-ITEM2{
+    transition: 0.5s;
+    box-shadow: rgb(0, 204, 255) 1px 0 10px; 
+    border-radius: 5px;
+}
+.MAIN2-ITEM2:hover{
+    transition: 0.5s;
+    box-shadow: rgb(211, 218, 173) 1px 0 25px; 
+    border-radius: 5px;
+}
+.MAIN2-ITEM2:hover > .MAIN2-ITEM2-item1{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+.MAIN2-ITEM2:hover > .MAIN2-ITEM2-item3{
+    transition: .5s;
+    opacity: 0;
+}
+.MAIN2-ITEM2-item1{
+    background: none; 
+}
+.MAIN2-ITEM2-item2{
+    background: none; 
+}
+.MAIN2-ITEM2-item3{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN2-ITEM2-item3:hover{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+.MAIN2-ITEM2-item1{
+    text-align: center;
+    transition: 0.5s;
+    color: transparent;
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+/*-УСЛУГИ3-*/
+.MAIN2-ITEM3{
+    transition: 0.5s;
+    box-shadow: rgb(0, 204, 255) 1px 0 10px; 
+    border-radius: 5px;
+}
+.MAIN2-ITEM3:hover{
+    transition: 0.5s;
+    box-shadow: rgb(211, 218, 173) 1px 0 25px; 
+    border-radius: 5px;
+}
+.MAIN2-ITEM3:hover > .MAIN2-ITEM3-item1{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+.MAIN2-ITEM3:hover > .MAIN2-ITEM3-item3{
+    transition: .5s;
+    opacity: 0;
+}
+.MAIN2-ITEM3-item1{
+    background: none; 
+}
+.MAIN2-ITEM3-item2{
+    background: none; 
+}
+.MAIN2-ITEM3-item3{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN2-ITEM3-item3:hover{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+.MAIN2-ITEM3-item1{
+    text-align: center;
+    transition: 0.5s;
+    color: transparent;
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+/*-УСЛУГИ4-*/
+.MAIN2-ITEM5{
+    transition: 0.5s;
+    box-shadow: rgb(0, 204, 255) 1px 0 10px; 
+    border-radius: 5px;
+}
+.MAIN2-ITEM5:hover{
+    transition: 0.5s;
+    box-shadow: rgb(211, 218, 173) 1px 0 25px; 
+    border-radius: 5px;
+}
+.MAIN2-ITEM5:hover > .MAIN2-ITEM5-item1{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+.MAIN2-ITEM5:hover > .MAIN2-ITEM5-item3{
+    transition: .5s;
+    opacity: 0;
+}
+.MAIN2-ITEM5-item1{
+    background: none; 
+}
+.MAIN2-ITEM5-item2{
+    background: none; 
+}
+.MAIN2-ITEM5-item3{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN2-ITEM5-item3:hover{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+.MAIN2-ITEM5-item1{
+    text-align: center;
+    transition: 0.5s;
+    color: transparent;
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+/*-УСЛУГИ5-*/
+.MAIN2-ITEM6{
+    transition: 0.5s;
+    box-shadow: rgb(0, 204, 255) 1px 0 10px; 
+    border-radius: 5px;
+}
+.MAIN2-ITEM6:hover{
+    transition: 0.5s;
+    box-shadow: rgb(211, 218, 173) 1px 0 25px; 
+    border-radius: 5px;
+}
+.MAIN2-ITEM6:hover > .MAIN2-ITEM6-item1{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+.MAIN2-ITEM6:hover > .MAIN2-ITEM6-item3{
+    transition: .5s;
+    opacity: 0;
+}
+.MAIN2-ITEM6-item1{
+    background: none; 
+}
+.MAIN2-ITEM6-item2{
+    background: none; 
+}
+.MAIN2-ITEM6-item3{
+    left:10%;
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN2-ITEM6-item3:hover{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+.MAIN2-ITEM6-item1{
+    text-align: center;
+    transition: 0.5s;
+    color: transparent;
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+/*-УСЛУГИ6-*/
+.MAIN2-ITEM7{
+    transition: 0.5s;
+    box-shadow: rgb(0, 204, 255) 1px 0 10px; 
+    border-radius: 5px;
+}
+.MAIN2-ITEM7:hover{
+    transition: 0.5s;
+    box-shadow: rgb(211, 218, 173) 1px 0 25px; 
+    border-radius: 5px;
+}
+.MAIN2-ITEM7:hover > .MAIN2-ITEM7-item1{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+.MAIN2-ITEM7:hover > .MAIN2-ITEM7-item3{
+    transition: .5s;
+    opacity: 0;
+}
+.MAIN2-ITEM7-item1{
+    background: none; 
+}
+.MAIN2-ITEM7-item2{
+    background: none; 
+}
+.MAIN2-ITEM7-item3{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN2-ITEM7-item3:hover{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+.MAIN2-ITEM7-item1{
+    text-align: center;
+    transition: 0.5s;
+    color: transparent;
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+/*-НАЗВАНИЕ РАЗДЕЛА-*/
+
+.MAIN2-ITEM4-item1{
+    background: none; 
+}
+.MAIN2-ITEM4-item2{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN2-ITEM4-item2:hover{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 25px;
+}
+/*--------------------------------------------------------------------------------------M-A-I-N_3-----------------------------------------------------------------------------------------------*/
+/*-ПРИЧИНА1-*/
+.MAIN3-ITEM1-item1{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 10px; 
+    transition: .5s;  
+}
+
+.MAIN3-ITEM1:hover > .MAIN3-ITEM1-item1{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN3-ITEM1-item1:hover > .MAIN3-ITEM1-item2{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN3-ITEM1-item2{
+    transition: .5s;
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    background-image: url(../assets/1920/LIGHT/R1H_1920.jpg);
+}
+    @media all and (max-width : 1700px){
+        .MAIN3-ITEM1-item2{
+            background-image: url(../assets/1700/LIGHT/R1H_1700.jpg);
+        }
+    }
+    @media all and (max-width : 960px){
+        .MAIN3-ITEM1-item2{
+            background-image: url(../assets/960/LIGHT/R1H_960.jpg);
+        }
+    }
+    @media all and (max-width : 720px){
+        .MAIN3-ITEM1-item2{
+            background-image: url(../assets/720/LIGHT/R1H_720.jpg);
+        }
+    }
+    @media all and (max-width : 540px){
+        .MAIN3-ITEM1-item2{
+            background-image: url(../assets/540/LIGHT/R1H_540.jpg);
+        }
+    }
+.MAIN3-ITEM1:hover > .MAIN3-ITEM1-item2{
+    border-radius: 20px 20px 20px 20px;
+    transition: .5s;
+    box-shadow: 0 0 20px rgb(0, 204, 255);
+    background-image: url(../assets/1920/DARK/R1DH_1920.jpg);
+    background-repeat: no-repeat
+}
+    @media all and (max-width : 1700px){
+        .MAIN3-ITEM1:hover > .MAIN3-ITEM1-item2{
+            background-image: url(../assets/1920/DARK/R1DH_1920.jpg);
+        }
+    }
+    @media all and (max-width : 960px){
+        .MAIN3-ITEM1:hover > .MAIN3-ITEM1-item2{
+            background-image: url(../assets/960/DARK/R1DH_960.jpeg);
+        }
+    }
+    @media all and (max-width : 720px){
+        .MAIN3-ITEM1:hover > .MAIN3-ITEM1-item2{
+            background-image: url(../assets/720/DARK/R1DH_720.jpeg);
+        }
+    }
+    @media all and (max-width : 540px){
+        .MAIN3-ITEM1:hover > .MAIN3-ITEM1-item2{
+            background-image: url(../assets/540/DARK/R1DH_540.jpg);
+        }
+    }
+/*-ПРИЧИНА2-*/
+.MAIN3-ITEM2-item1{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 10px; 
+    transition: .5s;  
+}
+
+.MAIN3-ITEM2:hover > .MAIN3-ITEM2-item1{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN3-ITEM2-item1:hover > .MAIN3-ITEM2-item2{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN3-ITEM2-item2{
+    transition: .5s;
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    background-image: url(../assets/1920/LIGHT/R2H_1920.jpg);
+}
+    @media all and (max-width : 1700px){
+        .MAIN3-ITEM2-item2{
+            background-image: url(../assets/1700/LIGHT/R2H_1700.jpg);
+        }
+    }
+    @media all and (max-width : 960px){
+        .MAIN3-ITEM2-item2{
+            background-image: url(../assets/960/LIGHT/R2H_960.jpg);
+        }
+    }
+    @media all and (max-width : 720px){
+        .MAIN3-ITEM2-item2{
+            background-image: url(../assets/720/LIGHT/R2H_720.jpg);
+        }
+    }
+    @media all and (max-width : 540px){
+        .MAIN3-ITEM2-item2{
+            background-image: url(../assets/540/LIGHT/R2H_540.jpg);
+        }
+    }
+.MAIN3-ITEM2:hover > .MAIN3-ITEM2-item2{
+    border-radius: 20px 20px 20px 20px;
+    transition: .5s;
+    box-shadow: 0 0 20px rgb(0, 204, 255);
+    background-image: url(../assets/1920/DARK/R2DH_1920.jpg);
+    background-repeat: no-repeat
+}
+    @media all and (max-width : 1700px){
+        .MAIN3-ITEM2:hover > .MAIN3-ITEM2-item2{
+            background-image: url(../assets/1920/DARK/R2DH_1920.jpg);
+        }
+    }
+    @media all and (max-width : 960px){
+        .MAIN3-ITEM2:hover > .MAIN3-ITEM2-item2{
+            background-image: url(../assets/960/DARK/R2DH_960.jpeg);
+        }
+    }
+    @media all and (max-width : 720px){
+        .MAIN3-ITEM2:hover > .MAIN3-ITEM2-item2{
+            background-image: url(../assets/720/DARK/R2DH_720.jpeg);
+        }
+    }
+    @media all and (max-width : 540px){
+        .MAIN3-ITEM2:hover > .MAIN3-ITEM2-item2{
+            background-image: url(../assets/540/DARK/R2DH_540.jpg);
+        }
+    }
+/*-ПРИЧИНА3-*/
+.MAIN3-ITEM3-item1{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 10px; 
+    transition: .5s;  
+}
+.MAIN3-ITEM3:hover > .MAIN3-ITEM3-item1{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN3-ITEM3-item1:hover > .MAIN3-ITEM3-item2{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN3-ITEM3-item2{
+    transition: .5s;
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    background-image: url(../assets/1920/LIGHT/R3H_1920.jpg);
+}
+    @media all and (max-width : 1700px){
+        .MAIN3-ITEM3-item2{
+            background-image: url(../assets/1700/LIGHT/R3H_1700.jpg);
+        }
+    }
+    @media all and (max-width : 960px){
+        .MAIN3-ITEM3-item2{
+            background-image: url(../assets/960/LIGHT/R3H_960.jpg);
+        }
+    }
+    @media all and (max-width : 720px){
+        .MAIN3-ITEM3-item2{
+            background-image: url(../assets/720/LIGHT/R3H_720.jpg);
+        }
+    }
+    @media all and (max-width : 540px){
+        .MAIN3-ITEM3-item2{
+            background-image: url(../assets/540/LIGHT/R3H_540.jpg);
+        }
+    }
+.MAIN3-ITEM3:hover > .MAIN3-ITEM3-item2{
+    border-radius: 20px 20px 20px 20px;
+    transition: .5s;
+    box-shadow: 0 0 20px rgb(0, 204, 255);
+    background-image: url(../assets/1920/DARK/R3DH_1920.jpg);
+    background-repeat: no-repeat
+}
+    @media all and (max-width : 1700px){
+        .MAIN3-ITEM3:hover > .MAIN3-ITEM3-item2{
+            background-image: url(../assets/1920/DARK/R3DH_1920.jpg);
+        }
+    }
+    @media all and (max-width : 960px){
+        .MAIN3-ITEM3:hover > .MAIN3-ITEM3-item2{
+            background-image: url(../assets/960/DARK/R3DH_960.jpeg);
+        }
+    }
+    @media all and (max-width : 720px){
+        .MAIN3-ITEM3:hover > .MAIN3-ITEM3-item2{
+            background-image: url(../assets/720/DARK/R3DH_720.jpeg);
+        }
+    }
+    @media all and (max-width : 540px){
+        .MAIN3-ITEM3:hover > .MAIN3-ITEM3-item2{
+            background-image: url(../assets/540/DARK/R3DH_540.jpg);
+        }
+    }
+/*-ПРИЧИНА4-*/
+.MAIN3-ITEM4-item1{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 10px; 
+    transition: .5s;  
+}
+.MAIN3-ITEM4:hover > .MAIN3-ITEM4-item1{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN3-ITEM4-item1:hover > .MAIN3-ITEM4-item2{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+.MAIN3-ITEM4-item2{
+    transition: .5s;
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    background-image: url(../assets/1920/LIGHT/R4H_1920.jpg);
+}
+    @media all and (max-width : 1700px){
+        .MAIN3-ITEM4-item2{
+            background-image: url(../assets/1700/LIGHT/R4H_1700.jpg);
+        }
+    }
+    @media all and (max-width : 960px){
+        .MAIN3-ITEM4-item2{
+            background-image: url(../assets/960/LIGHT/R4H_960.jpg);
+        }
+    }
+    @media all and (max-width : 720px){
+        .MAIN3-ITEM4-item2{
+            background-image: url(../assets/720/LIGHT/R4H_720.jpg);
+        }
+    }
+    @media all and (max-width : 540px){
+        .MAIN3-ITEM4-item2{
+            background-image: url(../assets/540/LIGHT/R4H_540.jpg);
+        }
+    }
+.MAIN3-ITEM4:hover > .MAIN3-ITEM4-item2{
+    border-radius: 20px 20px 20px 20px;
+    transition: .5s;
+    box-shadow: 0 0 20px rgb(0, 204, 255);
+    background-image: url(../assets/1920/DARK/R4DH_1920.png);
+    background-repeat: no-repeat
+}
+    @media all and (max-width : 1700px){
+        .MAIN3-ITEM4:hover > .MAIN3-ITEM4-item2{
+            background-image: url(../assets/1920/DARK/R4DH_1920.png);
+        }
+    }
+    @media all and (max-width : 960px){
+        .MAIN3-ITEM4:hover > .MAIN3-ITEM4-item2{
+            background-image: url(../assets/960/DARK/R4DH_960.png);
+        }
+    }
+    @media all and (max-width : 720px){
+        .MAIN3-ITEM4:hover > .MAIN3-ITEM4-item2{
+            background-image: url(../assets/720/DARK/R4DH_720.png);
+        }
+    }
+    @media all and (max-width : 540px){
+        .MAIN3-ITEM4:hover > .MAIN3-ITEM4-item2{
+            background-image: url(../assets/540/DARK/R4DH_540.png);
+        }
+    }
+/*-ПОЧЕМУ МЫ-*/
+.MAIN3-ITEM5-item1{
+    background: none;
+    box-shadow: none;
+}
+.MAIN3-ITEM5-item1{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 20px; 
+    transition: .5s; 
+}
+.MAIN3-ITEM5-item1:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;
+}
+/*--------------------------------------------------------------------------------------M-A-I-N_4-----------------------------------------------------------------------------------------------*/
+.MAIN4-ITEM1{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 1px 0 10px;
+    cursor: default; 
+}
+.MAIN4-ITEM1:hover{
+    color: rgb(226, 183, 207);
+    text-shadow: rgb(255, 0, 140) 1px 0 25px; 
+    transition: .5s;
+    cursor: default;  
+}
+.MAIN4-ITEM2{
+    transition: 0.5s;
+    box-shadow: inset rgb(217, 255, 0) 1px 0 10px;
+    background-color: #151322;
+}
+.MAIN4-ITEM2-item1{
+    transition: 0.5s;
+    color: transparent;
+    text-shadow: rgb(217, 255, 0) 0 0 10px;
+}
+.MAIN4-ITEM2-item2{
+    transition: 0.5s;
+    text-shadow: rgb(217, 255, 0) 0 0 10px;
+}
+.MAIN4-ITEM2-item3{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 0 0 10px;
+}
+/*-MAIN4_ITEM's-2__S_H_A_D_O_W_S------------------------------------------------------------*/
+.MAIN4-ITEM2:hover{
+    transition: 0.5s;
+    box-shadow: rgb(255, 0, 140) 1px 0 25px; 
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #151322;
+}
+.MAIN4-ITEM2:hover > .MAIN4-ITEM2-item1{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+}
+.MAIN4-ITEM2:hover > .MAIN4-ITEM2-item2{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+    filter: none;
+    border-radius: 200px;
+}
+.MAIN4-ITEM2:hover > .MAIN4-ITEM2-item3{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+}
+/*------------------------------------------------------------------------------------------*/
+.MAIN4-ITEM3{
+    transition: 0.5s;
+    box-shadow: inset rgb(217, 255, 0) 1px 0 10px;
+    background-color: #151322;
+}
+.MAIN4-ITEM3-item1{
+    transition: 0.5s;
+    color: transparent;
+    text-shadow: rgb(217, 255, 0) 0 0 10px;
+}
+.MAIN4-ITEM3-item2{
+    transition: 0.5s;
+    text-shadow: rgb(217, 255, 0) 0 0 10px;
+}
+.MAIN4-ITEM3-item3{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 0 0 10px;
+}
+/*-MAIN4_ITEM's-3__S_H_A_D_O_W_S------------------------------------------------------------*/
+.MAIN4-ITEM3:hover{
+    transition: 0.5s;
+    box-shadow: rgb(255, 0, 140) 1px 0 25px; 
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #151322;
+}
+.MAIN4-ITEM3:hover > .MAIN4-ITEM3-item1{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+}
+.MAIN4-ITEM3:hover > .MAIN4-ITEM3-item2{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+    filter: none;
+    border-radius: 200px;
+}
+.MAIN4-ITEM3:hover > .MAIN4-ITEM3-item3{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+}
+/*------------------------------------------------------------------------------------------*/
+.MAIN4-ITEM4{
+    transition: 0.5s;
+    box-shadow: inset rgb(217, 255, 0) 1px 0 10px;
+    background-color: #151322;
+}
+.MAIN4-ITEM4-item1{
+    transition: 0.5s;
+    color: transparent;
+    text-shadow: rgb(217, 255, 0) 0 0 10px;
+}
+.MAIN4-ITEM4-item2{
+    transition: 0.5s;
+    text-shadow: rgb(217, 255, 0) 0 0 10px;
+}
+.MAIN4-ITEM4-item3{
+    transition: 0.5s;
+    color: rgb(211, 218, 173);
+    text-shadow: rgb(217, 255, 0) 0 0 10px;
+}
+/*-MAIN4_ITEM's-4__S_H_A_D_O_W_S------------------------------------------------------------*/
+.MAIN4-ITEM4:hover{
+    transition: 0.5s;
+    box-shadow: rgb(255, 0, 140) 1px 0 25px; 
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #151322;
+}
+.MAIN4-ITEM4:hover > .MAIN4-ITEM4-item1{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+}
+.MAIN4-ITEM4:hover > .MAIN4-ITEM4-item2{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+    filter: none;
+    border-radius: 200px;
+}
+.MAIN4-ITEM4:hover > .MAIN4-ITEM4-item3{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+}
+/*------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------M-A-I-N_5-----------------------------------------------------------------------------------------------*/
+.MAIN5-ITEM1-item1{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 10px;
+}
+.MAIN5-ITEM1-item2{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 10px;
+}
+.MAIN5-ITEM2-item1{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 10px;
+}
+.MAIN5-ITEM2-item2{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 10px;
+}
+.MAIN5-ITEM3{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 10px; 
+}
+/*-ХОВЕР-*/
+.MAIN5-ITEM1-item1:hover{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+}
+.MAIN5-ITEM1-item2:hover{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+}
+.MAIN5-ITEM2-item1:hover{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+}
+.MAIN5-ITEM2-item2:hover{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+}
+.MAIN5-ITEM3:hover{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 25px; 
+    color: rgb(226, 183, 207);
+}
+/*-F_O_O_T_H_E_R----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.FOOTER-ITEM1{
+    background: #151322;
+}
+.FOOTER-ITEM2-item1{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM2-item2{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM2-item3{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM2-item4{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM2-item5{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM3-item1{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM3-item2{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM3-item3{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM3-item4{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM3-item5{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM3-item6{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM4-item1{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM4-item2{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM4-item3{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+.FOOTER-ITEM4-item4{
+    transition: 0.5s;
+    text-shadow:  rgb(255, 0, 140) 1px 0 10px; 
+    color: rgb(226, 183, 207); 
+}
+/*-ХОВЕР-*/
+.FOOTER-ITEM2-item1:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM2-item2:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM2-item3:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM2-item4:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM2-item5:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM3-item1:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM3-item2:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM3-item3:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM3-item4:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM3-item5:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM3-item6:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM4-item1:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM4-item2:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM4-item3:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
+.FOOTER-ITEM4-item4:hover{
+    transition: 0.5s;
+    color: rgb(178, 219, 230);
+    text-shadow: rgb(0, 204, 255) 1px 0 25px;  
+}
